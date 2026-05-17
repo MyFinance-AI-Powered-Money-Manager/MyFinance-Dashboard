@@ -68,17 +68,17 @@
     "score_reason": "Proporsi pengeluaran WANTS cukup tinggi. Terdapat beberapa potensi leak. Total leak cukup besar dibanding total pengeluaran."
   },
   "weekly_rewind": {
-    "week_start": "2026-05-06",
-    "week_end": "2026-05-12",
-    "weekly_income": 0,
-    "weekly_expense": 525000,
-    "weekly_net_cashflow": -525000,
+    "week_start": "2026-05-09",
+    "week_end": "2026-05-15",
+    "weekly_income": 0.0,
+    "weekly_expense": 205000.0,
+    "weekly_net_cashflow": -205000.0,
     "top_category": "WANTS",
-    "top_category_spending": 375000,
+    "top_category_spending": 175000.0,
     "top_leak_item": "Kopi Susu",
     "weekly_financial_score": 65,
     "weekly_score_category": "Good",
-    "weekly_insight": "Kopi Susu menjadi potential leak utama minggu ini karena muncul 15 kali dengan total Rp375.000."
+    "weekly_insight": "Minggu ini kategori pengeluaran terbesar adalah WANTS. Item Kopi Susu terdeteksi sebagai potential leak utama. Pantau transaksi kecil yang berulang agar cashflow tetap aman."
   },
   "budget_summary": [
     {
@@ -102,33 +102,189 @@
     {
       "category": "NEEDS",
       "amount": 150000,
-      "ratio": 0.2857
+      "ratio": 0.2857142857142857
     },
     {
       "category": "WANTS",
       "amount": 375000,
-      "ratio": 0.7143
-    },
-    {
-      "category": "OTHERS",
-      "amount": 0,
-      "ratio": 0
+      "ratio": 0.7142857142857143
     }
   ],
   "daily_spending": [
-    { "date": "2026-05-01", "amount": 40000 },
-    { "date": "2026-05-02", "amount": 40000 },
-    { "date": "2026-05-03", "amount": 40000 }
+    {
+      "date": "2026-05-01",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-02",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-03",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-04",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-05",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-06",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-07",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-08",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-09",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-10",
+      "amount": 40000
+    },
+    {
+      "date": "2026-05-11",
+      "amount": 25000
+    },
+    {
+      "date": "2026-05-12",
+      "amount": 25000
+    },
+    {
+      "date": "2026-05-13",
+      "amount": 25000
+    },
+    {
+      "date": "2026-05-14",
+      "amount": 25000
+    },
+    {
+      "date": "2026-05-15",
+      "amount": 25000
+    }
   ],
   "recent_transactions": [
     {
-      "id": "trx-leak-001",
+      "id": "trx-leak-015",
       "type": "EXPENSE",
       "total_amount": 25000,
       "category": "WANTS",
       "subcategory": "Jajan & Nongkrong",
       "description": "Kopi Susu",
-      "transaction_date": "2026-05-01T10:00:00Z"
+      "transaction_date": "2026-05-15 10:00:00+00:00"
+    },
+    {
+      "id": "trx-leak-014",
+      "type": "EXPENSE",
+      "total_amount": 25000,
+      "category": "WANTS",
+      "subcategory": "Jajan & Nongkrong",
+      "description": "Kopi Susu",
+      "transaction_date": "2026-05-14 10:00:00+00:00"
+    },
+    {
+      "id": "trx-leak-013",
+      "type": "EXPENSE",
+      "total_amount": 25000,
+      "category": "WANTS",
+      "subcategory": "Jajan & Nongkrong",
+      "description": "Kopi Susu",
+      "transaction_date": "2026-05-13 10:00:00+00:00"
+    },
+    {
+      "id": "trx-leak-012",
+      "type": "EXPENSE",
+      "total_amount": 25000,
+      "category": "WANTS",
+      "subcategory": "Jajan & Nongkrong",
+      "description": "Kopi Susu",
+      "transaction_date": "2026-05-12 10:00:00+00:00"
+    },
+    {
+      "id": "trx-leak-011",
+      "type": "EXPENSE",
+      "total_amount": 25000,
+      "category": "WANTS",
+      "subcategory": "Jajan & Nongkrong",
+      "description": "Kopi Susu",
+      "transaction_date": "2026-05-11 10:00:00+00:00"
+    },
+    {
+      "id": "trx-leak-010",
+      "type": "EXPENSE",
+      "total_amount": 25000,
+      "category": "WANTS",
+      "subcategory": "Jajan & Nongkrong",
+      "description": "Kopi Susu",
+      "transaction_date": "2026-05-10 10:00:00+00:00"
+    },
+    {
+      "id": "trx-need-010",
+      "type": "EXPENSE",
+      "total_amount": 15000,
+      "category": "NEEDS",
+      "subcategory": "Makan Sehari-hari",
+      "description": "Makan harian",
+      "transaction_date": "2026-05-10 07:30:00+00:00"
+    },
+    {
+      "id": "trx-leak-009",
+      "type": "EXPENSE",
+      "total_amount": 25000,
+      "category": "WANTS",
+      "subcategory": "Jajan & Nongkrong",
+      "description": "Kopi Susu",
+      "transaction_date": "2026-05-09 10:00:00+00:00"
+    },
+    {
+      "id": "trx-need-009",
+      "type": "EXPENSE",
+      "total_amount": 15000,
+      "category": "NEEDS",
+      "subcategory": "Makan Sehari-hari",
+      "description": "Makan harian",
+      "transaction_date": "2026-05-09 07:30:00+00:00"
+    },
+    {
+      "id": "trx-leak-008",
+      "type": "EXPENSE",
+      "total_amount": 25000,
+      "category": "WANTS",
+      "subcategory": "Jajan & Nongkrong",
+      "description": "Kopi Susu",
+      "transaction_date": "2026-05-08 10:00:00+00:00"
     }
-  ]
+  ],
+  "multi_pocket": {
+    "summary": {
+      "total_balance": 4475000.0,
+      "total_pockets": 1,
+      "highest_spending_pocket": "Wallet -001",
+      "highest_spending_amount": 525000.0,
+      "lowest_balance_pocket": "Wallet -001"
+    },
+    "pockets": [
+      {
+        "pocket_id": "wallet-001",
+        "pocket_name": "Wallet -001",
+        "pocket_type": "MAIN",
+        "current_balance": 4475000.0,
+        "target_amount": null,
+        "monthly_inflow": 5000000.0,
+        "monthly_outflow": 525000.0,
+        "progress_ratio": null,
+        "status": "Healthy"
+      }
+    ],
+    "insight": "Pocket dengan pengeluaran terbesar adalah Wallet -001 dengan total pengeluaran Rp525,000."
+  }
 }
