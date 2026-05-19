@@ -62,7 +62,18 @@ recent_transactions = data.get("recent_transactions", [])
 month_period = data.get("month_period", "")
 
 # --- SIDEBAR NAV ---
-st.sidebar.image("https://ui-avatars.com/api/?name=Robby&background=0A5C36&color=fff", width=60)
+st.sidebar.markdown("""
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding-top: 10px;">
+    <svg width="42" height="42" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="20" r="20" fill="#0A5C36"/>
+        <path d="M25 14H15C13.3431 14 12 15.3431 12 17V23C12 24.6569 13.3431 26 15 26H25C26.6569 26 28 24.6569 28 23V17C28 15.3431 26.6569 14 25 14Z" fill="white"/>
+        <path d="M28 17.5V22.5C28 23.3284 27.3284 24 26.5 24H18.5C17.6716 24 17 23.3284 17 22.5V17.5C17 16.6716 17.6716 16 18.5 16H26.5C27.3284 16 28 16.6716 28 17.5Z" fill="#0A5C36"/>
+        <path d="M26.5 17.5V22.5C26.5 22.7761 26.2761 23 26 23H20C19.7239 23 19.5 22.7761 19.5 22.5V17.5C19.5 17.2239 19.7239 17 20 17H26C26.2761 17 26.5 17.2239 26.5 17.5Z" fill="white"/>
+        <circle cx="23" cy="20" r="1.5" fill="#0A5C36"/>
+    </svg>
+    <span style="font-size: 26px; font-weight: 800; color: #0A5C36; letter-spacing: -0.5px; font-family: 'Inter', sans-serif;">MyFinance</span>
+</div>
+""", unsafe_allow_html=True)
 st.sidebar.markdown("**Welcome back**<br><span style='color:gray; font-size:12px;'>Financial Sanctuary</span>", unsafe_allow_html=True)
 st.sidebar.markdown("---")
 
