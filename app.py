@@ -1,12 +1,8 @@
 import streamlit as st
 import plotly.graph_objects as go
 import requests
-import os
 from dotenv import load_dotenv
 from utils import format_currency, format_percentage, get_month_start_end, get_past_month, get_month_name, to_dataframe, get_leak_and_score, extract_data
-
-
-load_dotenv()
 
 # --- PAGE CONFIG ---
 st.set_page_config(
@@ -54,7 +50,7 @@ st.markdown("""
 if "USERID" in st.query_params:
     date = get_month_start_end()
     userid = st.query_params.get("USERID")
-    template_url = os.getenv('URL_BACKEND_MYFINANCE')
+    template_url = st.secrets['URL_BACKEND_MYFINANCE']
     url = template_url.format(userid, date['start_date'], date['end_date'])
     response = requests.get(url)
     if response.status_code == 200:

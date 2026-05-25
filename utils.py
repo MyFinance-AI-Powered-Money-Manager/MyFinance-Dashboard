@@ -1,10 +1,10 @@
 import json
-import os
 import calendar
 import requests
-import pandas as pd
-from dotenv import load_dotenv
 import datetime
+import pandas as pd
+import streamlit as st
+from dotenv import load_dotenv
 
 load_dotenv()
 
@@ -76,7 +76,7 @@ def get_month_start_end():
 def get_leak_and_score(data):
     data['month_period'] = '2026'
     payload = data
-    url_leak_FS = os.getenv('URL_LEAK_FS')
+    url_leak_FS = st.secrets['URL_LEAK_FS']
     response_leak_FS = requests.post(url_leak_FS, json=payload)
     return response_leak_FS.json()
 
